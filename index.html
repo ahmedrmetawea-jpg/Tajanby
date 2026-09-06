@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajanby - متجر الأدوات المنزلية الفاخرة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>✨ Tajanby</h1>
+                <p>متجر الأدوات المنزلية الفاخرة</p>
+            </div>
+            <div class="navbar-menu">
+                <button class="currency-btn" onclick="toggleCurrency()">
+                    <span id="currency">ج.م</span> 💱
+                </button>
+                <a href="#cart" class="cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>أدوات منزلية تحول بيتك إلى حلم</h2>
+            <p>جودة عالية • أسعار منافسة • ضمان مدى الحياة</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <h3>تصفية المنتجات</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProducts('all')">الكل</button>
+                <button class="filter-btn" onclick="filterProducts('storage')">أدوات تخزين</button>
+                <button class="filter-btn" onclick="filterProducts('decor')">ديكور</button>
+                <button class="filter-btn" onclick="filterProducts('cleaning')">تنظيف</button>
+                <button class="filter-btn" onclick="filterProducts('bathroom')">الحمام</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>منتجاتنا المميزة</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <div class="container">
+            <h2>🛒 سلة التسوق</h2>
+            <div class="cart-content">
+                <div class="cart-items" id="cart-items">
+                    <p class="empty-cart">السلة فارغة</p>
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-item">
+                        <span>المجموع:</span>
+                        <span id="cart-total">0</span>
+                    </div>
+                    <button class="checkout-btn">الذهاب للدفع</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tajanby - جميع الحقوق محفوظة</p>
+            <p>📱 اتصل بنا: +20 100 0000000 | +966 50 0000000</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
